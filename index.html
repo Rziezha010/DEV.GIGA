@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dev.Giga — Game Development Studio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg:#05070D;
+  --text:#EAF0FF;
+  --muted:#9AA4B2;
+  --line:rgba(255,255,255,0.08);
+  --primary:#00D4FF;
+  --accent:#A855F7;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+  font-family:Inter;
+  background:
+    radial-gradient(900px circle at 20% 10%, rgba(0,212,255,0.10), transparent 55%),
+    radial-gradient(700px circle at 80% 30%, rgba(168,85,247,0.10), transparent 60%),
+    var(--bg);
+  color:var(--text);
+}
+
+nav{
+  position:fixed;
+  top:0;
+  width:100%;
+  backdrop-filter:blur(18px);
+  background:rgba(10,12,18,0.55);
+  border-bottom:1px solid var(--line);
+  z-index:1000;
+}
+
+.nav-inner{
+  max-width:1100px;
+  margin:auto;
+  display:flex;
+  justify-content:space-between;
+  padding:14px 20px;
+}
+
+.logo{
+  font-family:"Space Grotesk";
+  color:var(--primary);
+  font-weight:700;
+}
+
+.btn{
+  background:linear-gradient(135deg,var(--primary),var(--accent));
+  padding:10px 16px;
+  border-radius:12px;
+  color:#000;
+  font-weight:700;
+  text-decoration:none;
+}
+
+.hero{
+  padding:180px 20px 100px;
+  max-width:900px;
+  margin:auto;
+}
+
+.kicker{
+  color:var(--primary);
+  font-size:12px;
+  letter-spacing:2px;
+  text-transform:uppercase;
+}
+
+h1{
+  font-family:"Space Grotesk";
+  font-size:60px;
+  line-height:1.05;
+  margin-top:12px;
+}
+
+.hero p{
+  color:var(--muted);
+  margin-top:16px;
+  font-size:17px;
+}
+
+section{
+  max-width:1100px;
+  margin:auto;
+  padding:90px 20px;
+}
+
+h2{
+  font-family:"Space Grotesk";
+  font-size:34px;
+  margin-bottom:18px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:16px;
+}
+
+.card{
+  border:1px solid var(--line);
+  padding:20px;
+  border-radius:16px;
+  background:rgba(255,255,255,0.02);
+}
+
+.price{
+  border:1px solid var(--line);
+  padding:22px;
+  border-radius:16px;
+}
+
+.highlight{
+  border-color:var(--primary);
+  box-shadow:0 0 30px rgba(0,212,255,0.12);
+}
+
+footer{
+  text-align:center;
+  padding:40px;
+  color:var(--muted);
+  border-top:1px solid var(--line);
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <div class="logo">DEV.GIGA</div>
+    <a class="btn" href="https://wa.me/6285925115266">Contact</a>
+  </div>
+</nav>
+
+<main>
+
+<section class="hero">
+  <div class="kicker">ROBLOX GAME DEVELOPMENT STUDIO</div>
+
+  <h1>Build • Fix • Create Roblox Games</h1>
+
+  <p>Dev.Giga Game Studio menyediakan script, asset, system, dan jasa pembuatan game Roblox.</p>
+</section>
+
+<!-- RESOURCES -->
+<section>
+  <h2>Resources</h2>
+
+  <div class="grid">
+    <div class="card">Script gratis siap pakai</div>
+    <div class="card">GUI & fitur keren</div>
+    <div class="card">Module & system game</div>
+    <div class="card">Asset Studio Roblox</div>
+    <div class="card">ID resource & tools</div>
+    <div class="card">Tips development Roblox</div>
+    <div class="card">Update asset terbaru</div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section>
+  <h2>Services</h2>
+
+  <div class="grid">
+    <div class="card">Jasa buat map Roblox</div>
+    <div class="card">Jasa dekor map</div>
+    <div class="card">Jasa pasang Summit Kit</div>
+    <div class="card">Jasa pasang fitur map</div>
+    <div class="card">Jasa perbaiki bug map</div>
+    <div class="card">Jasa buat fitur / GUI</div>
+    <div class="card">Jasa pembuatan obstacle</div>
+    <div class="card">Jasa benerin stuck kamera</div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section>
+  <h2>Pricing</h2>
+
+  <div class="grid">
+
+    <div class="price">
+      <b>Map Dugem</b>
+      <p style="color:var(--muted);margin-top:8px;">Starting price</p>
+      <p><b>60K</b></p>
+    </div>
+
+    <div class="price">
+      <b>Map Gunung</b>
+      <p style="color:var(--muted);margin-top:8px;">Starting price</p>
+      <p><b>55K</b></p>
+    </div>
+
+    <div class="price highlight">
+      <b>Map Hangout</b>
+      <p style="color:var(--muted);margin-top:8px;">Starting price</p>
+      <p><b>150K</b></p>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<footer>
+© DEV.GIGA GAME STUDIO
+</footer>
+
+</body>
+      </html>
