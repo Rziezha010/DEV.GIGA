@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Dev.Giga — Game Development Studio</title>
+<title>Dev Giga — Game Developer</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
 
@@ -29,6 +29,7 @@ body{
   color:var(--text);
 }
 
+/* NAV */
 nav{
   position:fixed;
   top:0;
@@ -62,10 +63,12 @@ nav{
   text-decoration:none;
 }
 
+/* HERO */
 .hero{
   padding:180px 20px 100px;
   max-width:900px;
   margin:auto;
+  text-align:center;
 }
 
 .kicker{
@@ -88,6 +91,7 @@ h1{
   font-size:17px;
 }
 
+/* SECTION */
 section{
   max-width:1100px;
   margin:auto;
@@ -100,30 +104,28 @@ h2{
   margin-bottom:18px;
 }
 
+/* GRID */
 .grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
   gap:16px;
 }
 
+/* CARD */
 .card{
   border:1px solid var(--line);
   padding:20px;
   border-radius:16px;
   background:rgba(255,255,255,0.02);
+  transition:0.3s;
 }
 
-.price{
-  border:1px solid var(--line);
-  padding:22px;
-  border-radius:16px;
-}
-
-.highlight{
+.card:hover{
+  transform:translateY(-5px);
   border-color:var(--primary);
-  box-shadow:0 0 30px rgba(0,212,255,0.12);
 }
 
+/* FOOTER */
 footer{
   text-align:center;
   padding:40px;
@@ -135,86 +137,141 @@ footer{
 
 <body>
 
+<!-- NAV -->
 <nav>
   <div class="nav-inner">
-    <div class="logo">DEV.GIGA</div>
+    <div class="logo">DEV GIGA</div>
     <a class="btn" href="https://wa.me/6285925115266">Contact</a>
   </div>
 </nav>
 
 <main>
 
+<!-- HERO -->
 <section class="hero">
-  <div class="kicker">ROBLOX GAME DEVELOPMENT STUDIO</div>
+  <div class="kicker">GAME DEVELOPER</div>
 
-  <h1>Build • Fix • Create Roblox Games</h1>
+  <h1>Dev Giga</h1>
 
-  <p>Dev.Giga Game Studio menyediakan script, asset, system, dan jasa pembuatan game Roblox.</p>
+  <p>
+    Game Developer focused on C++ game development and Roblox scripting.
+    I build gameplay systems, mechanics, and interactive experiences.
+  </p>
 </section>
 
-<!-- RESOURCES -->
+<!-- ABOUT -->
 <section>
-  <h2>Resources</h2>
+  <h2>About Me</h2>
 
-  <div class="grid">
-    <div class="card">Script gratis siap pakai</div>
-    <div class="card">GUI & fitur keren</div>
-    <div class="card">Module & system game</div>
-    <div class="card">Asset Studio Roblox</div>
-    <div class="card">ID resource & tools</div>
-    <div class="card">Tips development Roblox</div>
-    <div class="card">Update asset terbaru</div>
+  <div class="card">
+    <p style="color:var(--muted); line-height:1.6;">
+      Dev Giga is a game developer focused on building gameplay systems,
+      scripting mechanics, and interactive experiences using C++ and Roblox Studio.
+    </p>
   </div>
 </section>
 
-<!-- SERVICES -->
+<!-- TECH STACK -->
 <section>
-  <h2>Services</h2>
+  <h2>Tech Stack</h2>
 
   <div class="grid">
-    <div class="card">Jasa buat map Roblox</div>
-    <div class="card">Jasa dekor map</div>
-    <div class="card">Jasa pasang Summit Kit</div>
-    <div class="card">Jasa pasang fitur map</div>
-    <div class="card">Jasa perbaiki bug map</div>
-    <div class="card">Jasa buat fitur / GUI</div>
-    <div class="card">Jasa pembuatan obstacle</div>
-    <div class="card">Jasa benerin stuck kamera</div>
+
+    <div class="card">
+      <b>Core Languages</b>
+      <p style="color:var(--muted);margin-top:8px;">C++ • Lua</p>
+    </div>
+
+    <div class="card">
+      <b>Game Engines</b>
+      <p style="color:var(--muted);margin-top:8px;">Unreal Engine • Roblox Studio</p>
+    </div>
+
+    <div class="card">
+      <b>Game Development</b>
+      <p style="color:var(--muted);margin-top:8px;">
+        Gameplay Systems • Physics • UI Systems
+      </p>
+    </div>
+
+    <div class="card">
+      <b>Tools</b>
+      <p style="color:var(--muted);margin-top:8px;">
+        Git • Visual Studio • Blender
+      </p>
+    </div>
+
   </div>
 </section>
 
-<!-- PRICING -->
+<!-- PROJECTS -->
 <section>
-  <h2>Pricing</h2>
+  <h2>Projects</h2>
 
   <div class="grid">
 
-    <div class="price">
-      <b>Map Dugem</b>
-      <p style="color:var(--muted);margin-top:8px;">Starting price</p>
-      <p><b>60K</b></p>
+    <div class="card">
+      <b>C++ Game Prototype</b>
+      <p style="color:var(--muted);margin-top:8px;">
+        2D game built with C++ to learn gameplay systems and mechanics.
+      </p>
     </div>
 
-    <div class="price">
-      <b>Map Gunung</b>
-      <p style="color:var(--muted);margin-top:8px;">Starting price</p>
-      <p><b>55K</b></p>
+    <div class="card">
+      <b>Roblox Obby System</b>
+      <p style="color:var(--muted);margin-top:8px;">
+        Checkpoint system, save data, and UI integration.
+      </p>
     </div>
 
-    <div class="price highlight">
-      <b>Map Hangout</b>
-      <p style="color:var(--muted);margin-top:8px;">Starting price</p>
-      <p><b>150K</b></p>
+    <div class="card">
+      <b>Game Mechanics Sandbox</b>
+      <p style="color:var(--muted);margin-top:8px;">
+        Experimentation with physics, movement, and interaction systems.
+      </p>
     </div>
 
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section>
+  <h2>Contact Me</h2>
+
+  <div class="card">
+    <p style="color:var(--muted);">
+      If you want to work together on game development projects, feel free to contact me.
+    </p>
+
+    <p style="color:var(--muted); margin-top:12px;">
+      Email:
+      <a href="mailto:devgiga01@gmail.com"
+         style="color:var(--primary); text-decoration:none; font-weight:600;">
+        devgiga01@gmail.com
+      </a>
+    </p>
+
+    <p style="color:var(--muted); margin-top:10px;">
+      WhatsApp:
+      <a href="https://wa.me/6285925115266"
+         style="color:var(--primary); text-decoration:none; font-weight:600;">
+        +62 859-2511-5266
+      </a>
+      <span style="margin-left:6px;">🇮🇩</span>
+    </p>
+
+    <div style="margin-top:15px; display:flex; gap:10px; flex-wrap:wrap;">
+      <a href="mailto:devgiga01@gmail.com" class="btn">Email Me</a>
+      <a href="https://wa.me/6285925115266" class="btn">WhatsApp Me</a>
+    </div>
   </div>
 </section>
 
 </main>
 
 <footer>
-© DEV.GIGA GAME STUDIO
+© 2026 Dev Giga — Game Developer Portfolio
 </footer>
 
 </body>
-      </html>
+</html>
