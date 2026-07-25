@@ -1,163 +1,16 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Dev Giga — Game Developer</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
-
-<style>
-:root{
-  --bg:#05070D;
-  --text:#EAF0FF;
-  --muted:#9AA4B2;
-  --line:rgba(255,255,255,0.08);
-  --primary:#00D4FF;
-  --accent:#A855F7;
-}
-
-*{margin:0;padding:0;box-sizing:border-box;}
-
-body{
-  font-family:Inter;
-  background:
-    radial-gradient(900px circle at 20% 10%, rgba(0,212,255,0.10), transparent 55%),
-    radial-gradient(700px circle at 80% 30%, rgba(168,85,247,0.10), transparent 60%),
-    var(--bg);
-  color:var(--text);
-}
-
-/* NAV */
-nav{
-  position:fixed;
-  top:0;
-  width:100%;
-  backdrop-filter:blur(18px);
-  background:rgba(10,12,18,0.55);
-  border-bottom:1px solid var(--line);
-  z-index:1000;
-}
-
-.nav-inner{
-  max-width:1100px;
-  margin:auto;
-  display:flex;
-  justify-content:space-between;
-  padding:14px 20px;
-}
-
-.logo{
-  font-family:"Space Grotesk";
-  color:var(--primary);
-  font-weight:700;
-}
-
-.btn{
-  background:linear-gradient(135deg,var(--primary),var(--accent));
-  padding:10px 16px;
-  border-radius:12px;
-  color:#000;
-  font-weight:700;
-  text-decoration:none;
-}
-
-/* HERO */
-.hero{
-  padding:180px 20px 100px;
-  max-width:900px;
-  margin:auto;
-  text-align:center;
-}
-
-.kicker{
-  color:var(--primary);
-  font-size:12px;
-  letter-spacing:2px;
-  text-transform:uppercase;
-}
-
-h1{
-  font-family:"Space Grotesk";
-  font-size:60px;
-  line-height:1.05;
-  margin-top:12px;
-}
-
-.hero p{
-  color:var(--muted);
-  margin-top:16px;
-  font-size:17px;
-}
-
-/* SECTION */
-section{
-  max-width:1100px;
-  margin:auto;
-  padding:90px 20px;
-}
-
-h2{
-  font-family:"Space Grotesk";
-  font-size:34px;
-  margin-bottom:18px;
-}
-
-/* GRID */
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:16px;
-}
-
-/* CARD */
-.card{
-  border:1px solid var(--line);
-  padding:20px;
-  border-radius:16px;
-  background:rgba(255,255,255,0.02);
-  transition:0.3s;
-}
-
-.card:hover{
-  transform:translateY(-5px);
-  border-color:var(--primary);
-}
-
-/* FOOTER */
-footer{
-  text-align:center;
-  padding:40px;
-  color:var(--muted);
-  border-top:1px solid var(--line);
-}
-</style>
-</head>
-
-<body>
-
-<!-- NAV -->
-<nav>
-  <div class="nav-inner">
-    <div class="logo">DEV GIGA</div>
-    <a class="btn" href="https://wa.me/6285925115266">Contact</a>
-  </div>
-</nav>
-
-<main>
-
 <!-- HERO -->
 <section class="hero">
-  <div class="kicker">GAME DEVELOPER</div>
+  <div class="kicker">C++ GAME DEVELOPER</div>
 
-  <h1>Dev Giga</h1>
+  <h1>Rziezha010</h1>
 
   <p>
-    Game Developer focused on C++ game development and Roblox scripting.
-    I build gameplay systems, mechanics, and interactive experiences.
+    C++ developer focused on game programming, custom systems,
+    and gameplay development. I build projects from scratch,
+    including 2D game engines, NPC systems, and interactive applications.
   </p>
 </section>
+
 
 <!-- ABOUT -->
 <section>
@@ -165,113 +18,144 @@ footer{
 
   <div class="card">
     <p style="color:var(--muted); line-height:1.6;">
-      Dev Giga is a game developer focused on building gameplay systems,
-      scripting mechanics, and interactive experiences using C++ and Roblox Studio.
+      I started programming by learning C++ and Lua.
+      My projects include game systems, Roblox development,
+      application systems, and a custom 2D RPG engine using C++ and SDL2.
+      I enjoy creating systems and understanding how software works internally.
     </p>
   </div>
 </section>
+
 
 <!-- TECH STACK -->
 <section>
-  <h2>Tech Stack</h2>
+<h2>Tech Stack</h2>
 
-  <div class="grid">
+<div class="grid">
 
-    <div class="card">
-      <b>Core Languages</b>
-      <p style="color:var(--muted);margin-top:8px;">C++ • Lua</p>
-    </div>
+<div class="card">
+<b>Languages</b>
+<p style="color:var(--muted);margin-top:8px;">
+C++ • Lua • HTML • CSS
+</p>
+</div>
 
-    <div class="card">
-      <b>Game Engines</b>
-      <p style="color:var(--muted);margin-top:8px;">Unreal Engine • Roblox Studio</p>
-    </div>
 
-    <div class="card">
-      <b>Game Development</b>
-      <p style="color:var(--muted);margin-top:8px;">
-        Gameplay Systems • Physics • UI Systems
-      </p>
-    </div>
+<div class="card">
+<b>Game Development</b>
+<p style="color:var(--muted);margin-top:8px;">
+SDL2 • Roblox Studio • Custom Engine Development
+</p>
+</div>
 
-    <div class="card">
-      <b>Tools</b>
-      <p style="color:var(--muted);margin-top:8px;">
-        Git • Visual Studio • Blender
-      </p>
-    </div>
 
-  </div>
+<div class="card">
+<b>Programming Concepts</b>
+<p style="color:var(--muted);margin-top:8px;">
+OOP • Memory Management • STL • Entity Systems
+</p>
+</div>
+
+
+<div class="card">
+<b>Tools</b>
+<p style="color:var(--muted);margin-top:8px;">
+Git • Visual Studio • Blender
+</p>
+</div>
+
+</div>
 </section>
+
 
 <!-- PROJECTS -->
 <section>
-  <h2>Projects</h2>
+<h2>Projects</h2>
 
-  <div class="grid">
+<div class="grid">
 
-    <div class="card">
-      <b>C++ Game Prototype</b>
-      <p style="color:var(--muted);margin-top:8px;">
-        2D game built with C++ to learn gameplay systems and mechanics.
-      </p>
-    </div>
 
-    <div class="card">
-      <b>Roblox Obby System</b>
-      <p style="color:var(--muted);margin-top:8px;">
-        Checkpoint system, save data, and UI integration.
-      </p>
-    </div>
+<div class="card">
+<b>Custom 2D RPG Engine</b>
 
-    <div class="card">
-      <b>Game Mechanics Sandbox</b>
-      <p style="color:var(--muted);margin-top:8px;">
-        Experimentation with physics, movement, and interaction systems.
-      </p>
-    </div>
+<p style="color:var(--muted);margin-top:8px;">
+A custom game engine built from scratch using C++ and SDL2.
+Features:
+<br>
+• Game Loop
+<br>
+• Renderer System
+<br>
+• Entity Management
+<br>
+• Collision Detection
+<br>
+• Player Combat
+<br>
+• Enemy AI
+<br>
+• Health System
+</p>
 
-  </div>
+</div>
+
+
+
+<div class="card">
+<b>DEV.GIGA NPC AI System</b>
+
+<p style="color:var(--muted);margin-top:8px;">
+Roblox Lua based NPC behaviour experiment.
+Features:
+<br>
+• Personality System
+<br>
+• Emotion State
+<br>
+• Decision Scoring
+<br>
+• Memory System
+<br>
+• Pathfinding
+<br>
+• World Simulation
+</p>
+
+</div>
+
+
+
+<div class="card">
+<b>C++ Management Systems</b>
+
+<p style="color:var(--muted);margin-top:8px;">
+Application projects created to practice programming logic.
+<br><br>
+• Banking System
+<br>
+• Cashier System
+<br>
+• Data Management
+</p>
+
+</div>
+
+
+<div class="card">
+<b>Roblox Game Projects</b>
+
+<p style="color:var(--muted);margin-top:8px;">
+Gameplay experiments using Lua scripting.
+<br><br>
+• Game Mechanics
+<br>
+• UI Systems
+<br>
+• Server and Client Logic
+</p>
+
+</div>
+
+
+</div>
 </section>
-
-<!-- CONTACT -->
-<section>
-  <h2>Contact Me</h2>
-
-  <div class="card">
-    <p style="color:var(--muted);">
-      If you want to work together on game development projects, feel free to contact me.
-    </p>
-
-    <p style="color:var(--muted); margin-top:12px;">
-      Email:
-      <a href="mailto:devgiga01@gmail.com"
-         style="color:var(--primary); text-decoration:none; font-weight:600;">
-        devgiga01@gmail.com
-      </a>
-    </p>
-
-    <p style="color:var(--muted); margin-top:10px;">
-      WhatsApp:
-      <a href="https://wa.me/6285925115266"
-         style="color:var(--primary); text-decoration:none; font-weight:600;">
-        +62 859-2511-5266
-      </a>
-      <span style="margin-left:6px;">🇮🇩</span>
-    </p>
-
-    <div style="margin-top:15px; display:flex; gap:10px; flex-wrap:wrap;">
-      <a href="mailto:devgiga01@gmail.com" class="btn">Email Me</a>
-      <a href="https://wa.me/6285925115266" class="btn">WhatsApp Me</a>
-    </div>
-  </div>
-</section>
-
-</main>
-
-<footer>
-© 2026 Dev Giga — Game Developer Portfolio
-</footer>
-
-</body>
-</html>
